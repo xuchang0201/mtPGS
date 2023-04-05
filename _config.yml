@@ -1,0 +1,77 @@
+remote_theme: allejo/jekyll-docs-theme
+name: GIFT
+
+project:
+  version: 1.0.0
+  download_url: https://github.com/yuanzhongshang/GIFT/
+  download_text: Download
+
+license:
+  software: GNU License 3.0
+  software_url: https://www.gnu.org/licenses/licenses.en.html
+ 
+links:
+  header:
+    - title: GitHub
+      icon: github
+      brand: true
+      url: https://github.com/yuanzhongshang/GIFT/
+  homepage:
+    - title: View on GitHub
+      icon: github
+      brand: true
+      url: https://github.com/yuanzhongshang/GIFT/
+  footer:
+    - title: GitHub
+      icon: github
+      brand: true
+      url: https://github.com/yuanzhongshang/GIFT/
+    - title: Issues
+      icon: bug
+      url: https://github.com/yuanzhongshang/GIFT/issues?state=open
+
+ui:
+  mode: 'light' # 'auto', 'dark', 'light'
+  brand:
+    dark: "#00ceff"
+    light: "#36A7B9"
+  border_color:
+    dark: "#2A58C3"
+    light: "#00ceff"
+  header:
+    trianglify: true
+    dark:
+      color1: "#062a48"
+      color2: "#304e67"
+    light:
+      color1: "#336666"
+      color2: "#CC6600"
+  masthead:
+    color:
+      dark: "#fff"
+      light: "#fff"
+    align:
+      homepage: 'center'
+      page: 'left'
+
+social:
+  github:
+    user: yuanzhongshang
+    repo: GIFT
+  twitter:
+    enabled: false
+    via:
+    hash:
+    account:
+  facebook:
+    enabled: false
+    profileUrl:
+
+analytics:
+  google: UA-123456-1
+
+# Build settings
+markdown: kramdown
+exclude:
+  - LICENSE.md
+  - README.md
