@@ -2,10 +2,10 @@
 layout: full
 homepage: true
 disable_anchors: true
-description: Gene-based Integrative Fine-mapping through conditional TWAS
+description: Multi-trait assisted Polygenic Scores (mtPGS)
 ---
-## GIFT Overview
-![GIFT\_pipeline](Fig1.png)
-GIFT is an R package for efficient statistical inference of conditional TWAS fine-mapping. GIFT examines one genomic region at a time, jointly models the GReX of all genes residing in the focal region, and carries out TWAS conditional analysis in a maximum likelihood framework. In the process, GIFT explicitly models the gene expression correlation and cis-SNP LD across different genes in the region, accounts for the uncertainty in the constructed GReX through joint inference and provides calibrated p values. GIFT is implemented as an open-source R package, freely available at www.xzlab.org/software.html. 
+## mtPGS Overview
+![mtPGS\_pipeline](schematic plot.tif)
+mtPGS is a statistical method that leverages multiple traits to construct accurate polygenic scores (PGS) for a target trait of interest. mtPGS borrows SNP effect size similarity information between the target trait and its relevant traits to improve the effect size estimation on the target trait. In the process, mtPGS flexibly models the shared genetic architecture between the target and the relevant traits to achieve robust performance, while explicitly accounting for the environmental covariance among them to accommodate different study designs with various sample overlap patterns. In addition, mtPGS uses only summary statistics as input and relies on a deterministic algorithm with several algebraic techniques for scalable computation. mtPGS is implemented as an open-source C++ software, freely available at www.xzlab.org/software.html. 
 
 ### Example Analysis with GIFT: [here](https://yuanzhongshang.github.io/GIFT/documentation/04_GIFT_Example.html).
