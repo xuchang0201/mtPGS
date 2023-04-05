@@ -14,4 +14,4 @@ For mtPGS installation, please clone this repository via the commands
 Chang Xu, Santhi K. Ganesh, and Xiang Zhou (2023). mtPGS: Leverage multiple correlated traits for accurate polygenic score construction.
 
 # Questions 
-If you have any questions on mtPGS software, please email to Chang Xu (wchung@hsph.harvard.edu).
+If you have any questions on mtPGS software, please email to Chang Xu (xuchang@umich.edu).
