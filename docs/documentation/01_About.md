@@ -3,15 +3,15 @@ layout: page
 title: About
 ---
 
-GIFT is a Gene-based Integrative Fine-mapping for performing conditional TWAS analysis. GIFT examines one genomic region at a time, jointly models the GReX of all genes residing in the focal region, and carries out TWAS conditional analysis in a maximum likelihood framework. In the process, GIFT explicitly models the gene expression correlation and cis-SNP LD across different genes in the region and accounts for the uncertainty in the constructed GReX. As a result, GIFT provides effective type I error control, refines marginal TWAS associations into a much smaller set of putatively causal associations, and yields high statistical power with reduced false discoveries. The software is distributed under the GNU General Public License.
+mtPGS is a statistical method that leverages multiple traits to construct accurate polygenic scores (PGS) for a target trait of interest. mtPGS borrows SNP effect size similarity information between the target trait and its relevant traits to improve the effect size estimation on the target trait. In the process, mtPGS flexibly models the shared genetic architecture between the target and the relevant traits to achieve robust performance, while explicitly accounting for the environmental covariance among them to accommodate different study designs with various sample overlap patterns. In addition, mtPGS uses only summary statistics as input and relies on a deterministic algorithm with several algebraic techniques for scalable computation. The software is distributed under the GNU General Public License.
 
-Cite `GIFT`
+Cite `mtPGS`
 -------------------
-Lu Liu, Ran Yan, Ping Guo, Jiadong Ji, Weiming Gong, Fuzhong Xue, Zhongshang Yuan, and Xiang Zhou (2023). Conditional transcriptome-wide association study for fine-mapping causal genes.
+Chang Xu, Santhi K. Ganesh, and Xiang Zhou (2023). mtPGS: Leverage multiple correlated traits for accurate polygenic score construction.
 
 Contact
 -------------------
-if you have questions, feel free to leave messages on the [github issues](https://github.com/LULIU1816/GIFT/issues) or contact me through email: 201815769@mail.sdu.edu.cn
+if you have any questions on mtPGS software, please feel free to leave messages on the [github issues](https://github.com/xuchang0201/mtPGS/issues) or contact me through email: xuchang@umich.edu
 
 Our group
 -------------------
