@@ -4,17 +4,14 @@ mtPGS is a method that constructs accurate PGS for a target trait of interest th
 
 
 # Getting Started
-In order to download CTPR, you should clone this repository via the commands
+For mtPGS installation, please clone this repository via the commands
 
-    git clone https://github.com/wonilchung/CTPR.git
-    cd CTPR
-
-Short tutorials describing how to install and run CTPR can be found in the following wiki: https://github.com/wonilchung/CTPR/wiki/CTPR-User-Manual.
+    git clone https://github.com/xuchang0201/mtPGS.git
+    cd mtPGS
 
 # Citations
-The CTPR algorithm is described in the following reference:
 
-Wonil Chung, Jun Chen, Constance Turman, Sara Lindstrom, Zhaozhong Zhu, Po-Ru Loh, Peter Kraft and Liming Liang (2019), Efficient cross-trait penalized regression increases prediction accuracy in large cohorts using secondary phenotypes. Nature Communications, 10(1), 569. [Link](https://www.nature.com/articles/s41467-019-08535-0)
+Chang Xu, Santhi K. Ganesh, and Xiang Zhou (2023). mtPGS: Leverage multiple correlated traits for accurate polygenic score construction.
 
-# Questions and Requests
-If you have any questions on CTPR software, please email to Wonil Chung (wchung@hsph.harvard.edu).
+# Questions 
+If you have any questions on mtPGS software, please email to Chang Xu (wchung@hsph.harvard.edu).
