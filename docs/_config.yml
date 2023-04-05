@@ -3,7 +3,7 @@ name: GIFT
 
 project:
   version: 1.0.0
-  download_url: https://github.com/yuanzhongshang/GIFT/
+  download_url: https://github.com/xuchang0201/mtPGS/
   download_text: Download
 
 license:
@@ -15,20 +15,20 @@ links:
     - title: GitHub
       icon: github
       brand: true
-      url: https://github.com/yuanzhongshang/GIFT/
+      url: https://github.com/xuchang0201/mtPGS/
   homepage:
     - title: View on GitHub
       icon: github
       brand: true
-      url: https://github.com/yuanzhongshang/GIFT/
+      url: https://github.com/xuchang0201/mtPGS/
   footer:
     - title: GitHub
       icon: github
       brand: true
-      url: https://github.com/yuanzhongshang/GIFT/
+      url: https://github.com/xuchang0201/mtPGS/
     - title: Issues
       icon: bug
-      url: https://github.com/yuanzhongshang/GIFT/issues?state=open
+      url: https://github.com/xuchang0201/mtPGS/issues
 
 ui:
   mode: 'light' # 'auto', 'dark', 'light'
@@ -56,8 +56,8 @@ ui:
 
 social:
   github:
-    user: yuanzhongshang
-    repo: GIFT
+    user: xuchang0201
+    repo: mtPGS
   twitter:
     enabled: false
     via:
