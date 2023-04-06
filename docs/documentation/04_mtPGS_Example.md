@@ -8,10 +8,11 @@ This page provides a tutorial for PGS construction using mtPGS. Before runing th
 ## mtPGS
 The example data for mtPGS tutorial can be downloaded in this [page](https://xuchang0201.github.io/mtPGS/documentation/03_data.html). Here are the details about the required data input illustrated. 
 ### 1. Formats of input data for mtPGS
-- GWAS summary statistics: We require the GWAS summary statistics in [GEMMA](https://github.com/genetics-statistics/GEMMA) format, with the following columns: chr, rs, ps, n_mis, n_obs, allele1, allele0, af, beta, se, p_wald. Please be advised that each column should be separated using tab. 
-- Reference panel: The reference panel for LD matrix should be in PLINK binary format (bed, bim, and fam).
-- LD block information: We use the LD block information from [Berisa et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731402/), and we provide a formatted text file in the [data](https://github.com/xuchang0201/mtPGS/tree/main/data) as input for mtPGS.
-- Genetic and environmental variance component matrices: These matrices should be formatted as a plain text, see [example](https://github.com/xuchang0201/mtPGS/blob/main/data/v_g.txt). In this example, we assume that the heritability of the two traits is 0.5, and the genetic covariance is 0.25. We recommend using [GECKO](https://github.com/borangao/GECKO) for the estimation of genetic and environmental variance components.
+* GWAS summary statistics: We require the GWAS summary statistics in [GEMMA](https://github.com/genetics-statistics/GEMMA) format, with the following columns: chr, rs, ps, n_mis, n_obs, allele1, allele0, af, beta, se, p_wald. Please be advised that each column should be separated using tab. 
+* Reference panel: The reference panel for LD matrix should be in PLINK binary format (bed, bim, and fam).
+* LD block information: We use the LD block information from [Berisa et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731402/), and we provide a formatted text file in the [data](https://github.com/xuchang0201/mtPGS/tree/main/data) as input for mtPGS.
+* Genetic and environmental variance component matrices: These matrices should be formatted as a plain text, see [example](https://github.com/xuchang0201/mtPGS/blob/main/data/v_g.txt). In this example, we assume that the heritability of the two traits is 0.5, and the genetic covariance is 0.25. We recommend using [GECKO](https://github.com/borangao/GECKO) for the estimation of genetic and environmental variance components.
+
 ### 2. Running mtPGS with four sets of GWAS summary statistics
 When four sets of GWAS summary statistics are available (one for overlapped individuals and one for non-overlapped individuals for each trait), and we designate trait 1 as the target trait, the PGS construction for the target trait can be performed using the following command
 ```
@@ -30,9 +31,11 @@ The essential inputs are:
 - vg: specify the directory of genetic variance components file.
 - ve: specify the directory of environmental variance components file.
 - output: specify the prefix of output files.
+
 ### 3. Running mtPGS with two sets of GWAS summary statistics
 When only two sets of summary statistics are available (one for each trait), we perform mtPGS analysis using the following command
 ```
+workdir=/your/mtPGS/directory #specify the mtPGS directory
 ${workdir}/mtPGS --summstat ${workdir}/data/summstat/summstat_trait_1.assoc.txt ${workdir}/data/summstat/summstat_trait_2.txt --n 10000 10000 --block ${workdir}/data/block.txt --target 0 --ref ${workdir}/data/ref --mafMax 0.8 --vg v_g.txt --ve v_e.txt --output trait_1_target_beta trait_2_relevant_beta
 ```
 Here, instead of summstat_int, summstat_ext and n_s, n_ext, we use
