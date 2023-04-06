@@ -17,7 +17,10 @@ The example data for mtPGS tutorial can be downloaded in this [page](https://xuc
 When four sets of GWAS summary statistics are available (one for overlapped individuals and one for non-overlapped individuals for each trait), and we designate trait 1 as the target trait, the PGS construction for the target trait can be performed using the following command
 ```
 workdir=/your/mtPGS/directory #specify the mtPGS directory
-${workdir}/mtPGS --summstat_int ${workdir}/data/summstat/summstat_trait_1_int.assoc.txt ${workdir}/data/summstat/summstat_trait_2_int.assoc.txt --summstat_ext ${workdir}/data/summstat/summstat_trait_1_ext.assoc.txt ${workdir}/data/summstat/summstat_trait_2_ext.assoc.txt --n_s 7000 --n_ext 3000 3000 --block ${workdir}/data/block.txt --target 0 --ref ${workdir}/data/ref --mafMax 0.8 --vg v_g.txt --ve v_e.txt --output trait_1_target_beta trait_2_relevant_beta
+${workdir}/mtPGS --summstat_int ${workdir}/data/summstat/summstat_trait_1_int.assoc.txt ${workdir}/data/summstat/summstat_trait_2_int.assoc.txt \
+--summstat_ext ${workdir}/data/summstat/summstat_trait_1_ext.assoc.txt ${workdir}/data/summstat/summstat_trait_2_ext.assoc.txt \
+--n_s 7000 --n_ext 3000 3000 --block ${workdir}/data/block.txt --target 0 --ref ${workdir}/data/ref --mafMax 0.8 \
+--vg v_g.txt --ve v_e.txt --output trait_1_target_beta trait_2_relevant_beta
 ```
 The essential inputs are:
 - summstat_int: specify the GWAS summary statistics computed based on overlapped individuals.
@@ -36,7 +39,9 @@ The essential inputs are:
 When only two sets of summary statistics are available (one for each trait), we perform mtPGS analysis using the following command
 ```
 workdir=/your/mtPGS/directory #specify the mtPGS directory
-${workdir}/mtPGS --summstat ${workdir}/data/summstat/summstat_trait_1.assoc.txt ${workdir}/data/summstat/summstat_trait_2.txt --n 10000 10000 --block ${workdir}/data/block.txt --target 0 --ref ${workdir}/data/ref --mafMax 0.8 --vg v_g.txt --ve v_e.txt --output trait_1_target_beta trait_2_relevant_beta
+${workdir}/mtPGS --summstat ${workdir}/data/summstat/summstat_trait_1.assoc.txt ${workdir}/data/summstat/summstat_trait_2.txt \
+--n 10000 10000 --block ${workdir}/data/block.txt --target 0 --ref ${workdir}/data/ref --mafMax 0.8 --vg v_g.txt --ve v_e.txt \
+--output trait_1_target_beta trait_2_relevant_beta
 ```
 Here, instead of summstat_int, summstat_ext and n_s, n_ext, we use
 - summstat: specify the GWAS summary statistics for the two traits
