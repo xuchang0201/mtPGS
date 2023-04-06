@@ -4,45 +4,31 @@ title: Installation
 description: ~
 ---
 
-`GIFT` is implemented as an R package, which can be installed from GitHub by:
+`mtPGS` is implemented as a C++ package, which can be installed from GitHub by:
 
 ### Dependencies 
-* R version >= 4.0.0.
-* R packages: Rcpp, RcppArmadillo, parallel
+* C++ library: [Armadillo](https://arma.sourceforge.net/)
+* Statistical genetics software: [PLINK](https://www.cog-genomics.org/plink/)
 
 
-#### 1. Install `devtools` if necessary
-```r
-install.packages('devtools')
+#### 1. Install `Armadillo` if necessary
+Armadillo is a C++ library for linear algebra and scientific computing. Before installing Armadillo package, please ensure CMake tool, LAPACK and BLAS (or preferably OpenBLAS) are installed on your system. If these tools are not installed, you can download them from [http://www.cmake.org](http://www.cmake.org) (CMake tool) and [http://www.openblas.net/](http://www.openblas.net/) (OpenBLAS library). If you prefer to install the library and headers for Armadillo package in a user’s own directory, please use the option CMAKE_INSTALL_PREFIX as follows.
+
+```
+wget http://sourceforge.net/projects/arma/files/armadillo-9.200.7.tar.xz
+tar xf armadillo-9.200.7.tar.xz
+cd armadillo-9.200.7
+cmake . -DCMAKE_INSTALL_PREFIX:PATH=/xxxx/armadillo-9.200.7
+make && make install
 ```
 
-#### 2. Install `GIFT`
-```r
-devtools::install_github('yuanzhongshang/GIFT')
+#### 2. Install `mtPGS`
 ```
-#### 3. Load package
-```r
-library(GIFT)
+git clone https://github.com/xuchang0201/mtPGS.git
+cd mtPGS
+make
 ```
-
-This package is supported for Windows 10, MAC and Linux. The package has been tested on the following systems:
-- Windows 10: Home (1903)
-- MAC: OSX (10.14.1)
-- Linux: Ubuntu (16.04.6)
-
-#### 4. Some possible issues when installing the package, especially on the MacOS system
-(1) Cannot find tools necessary when using R in the MacOS system.
-```r
-Error: Failed to install 'GIFT' from GitHub:
-  Could not find tools necessary to compile a package
-Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem.
-``` 
-possible solution: in R, type the code ``` options(buildtools.check = function(action) TRUE )```, see the discussion about this error, [link](https://stackoverflow.com/questions/37776377/error-when-installing-an-r-package-from-github-could-not-find-build-tools-neces)
-
-(2) library not found for -lgfortran when using R in the MacOS system.
-```r
-ld: library not found for -lgfortran
+#### 3. Check the options included in the `mtPGS`
 ```
-It seems the gfortran is not well installed on the MacOS system. Please check this [link](https://thecoatlessprofessor.com/programming/cpp/r-compiler-tools-for-rcpp-on-macos/) for the gfortran installation to see if it helps. 
-
-
+./mtPGS -h
+```
