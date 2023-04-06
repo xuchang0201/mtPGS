@@ -5,12 +5,7 @@ description: ~
 ---
 The following items are the example data inputs required to construct PGS for a target trait with the aid of one relevant trait. 
 ### 1. GWAS summary statistics of the two traits from [GEMMA](https://github.com/genetics-statistics/GEMMA) 
-  * [Summary statistics of overlapped individuals for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
-  * [Summary statistics of non-overlapped individuals for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zy.txt)
-  * [Summary statistics of overlapped individuals for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/X.txt)
-  * [Summary statistics of non-overlapped individuals for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/Y.txt) 
-  * [Summary statistics for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
-  * [Summary statistics for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/X.txt)
+  * [Summary statistics](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
   
 ### 2. Reference panel for computing LD matrix
   * [Reference panel](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zscore1.txt)
@@ -19,5 +14,5 @@ The following items are the example data inputs required to construct PGS for a 
   * [European](https://github.com/xuchang0201/mtPGS/blob/main/data/EUR_LD_Block.txt)
  
 ### 4. Genetic and environmental variance component matrices
-  * [Genetic variance component](https://github.com/xuchang0201/mtPGS/blob/main/data/v_g.txt)
-  * [Environmental variance component](https://github.com/xuchang0201/mtPGS/blob/main/data/v_e.txt)
+  * [Genetic variance component matrix](https://github.com/xuchang0201/mtPGS/blob/main/data/v_g.txt)
+  * [Environmental variance component matrix](https://github.com/xuchang0201/mtPGS/blob/main/data/v_e.txt)
