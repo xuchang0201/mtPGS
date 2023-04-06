@@ -8,7 +8,7 @@ The following items are the example data inputs required to construct PGS for a 
   * [Summary statistics](https://github.com/xuchang0201/mtPGS/tree/main/data/summstat)
   
 #### 2. Reference panel for computing LD matrix
-  * [Reference panel](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zscore1.txt)
+  * [Reference panel](https://github.com/xuchang0201/mtPGS/tree/main/data)
 
 #### 3. LD block information 
   * [European](https://github.com/xuchang0201/mtPGS/blob/main/data/EUR_LD_Block.txt)
