@@ -3,10 +3,10 @@ layout: page
 title: mtPGS Tutorial
 description: ~
 ---
-This page provides a tutorial for PGS construction using mtPGS. Before runing the example code, make sure that the mtPGS software is installed and compiled successfully. For instructions for installation, please see the [Installation](https://github.com/xuchang0201/mtPGS/blob/main/docs/documentation/02_installation.md).
+This page provides a tutorial for PGS construction using mtPGS. Before runing the example code, make sure that the mtPGS software is installed and compiled successfully. For instructions for installation, please see the [Installation section](https://xuchang0201.github.io/mtPGS/documentation/02_installation.html).
 
-## For the summary statistics
-The example data for runing the tutorial can be downloaded in this [page](https://yuanzhongshang.github.io/GIFT/documentation/03_data.html)
+## mtPGS 
+The example data for mtPGS tutorial can be downloaded in this [page](https://xuchang0201.github.io/mtPGS/documentation/03_data.html)
 Here are the details about the required data input illustrated. 
 ### 1. Zscore matrix of the cis-SNP effect size matrix, e.g.,
 ```r
