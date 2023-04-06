@@ -5,7 +5,7 @@ description: ~
 ---
 The following items are the example data inputs required to construct PGS for a target trait with the aid of one relevant trait. 
 #### 1. GWAS summary statistics of the two traits 
-  * [Summary statistics](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
+  * [Summary statistics](https://github.com/xuchang0201/mtPGS/tree/main/data/summstat)
   
 #### 2. Reference panel for computing LD matrix
   * [Reference panel](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zscore1.txt)
