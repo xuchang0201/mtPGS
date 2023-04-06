@@ -34,10 +34,10 @@ ui:
   mode: 'light' # 'auto', 'dark', 'light'
   brand:
     dark: "#00ceff"
-    light: "#36A7B9"
+    light: "#57b936"
   border_color:
     dark: "#2A58C3"
-    light: "#00ceff"
+    light: "#ff4800"
   header:
     trianglify: true
     dark:
