@@ -3,18 +3,23 @@ layout: page
 title: Data Input
 description: ~
 ---
-The following are the links for the example dataset used in the GIFT. 
-
-1. For the individual-level data:
-  * [Simulated scaled genenotype matrix in eQTL data](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
-  * [Simulated scaled genenotype matrix in GWAS data](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zy.txt)
-  * [Simulated gene expression vector](https://github.com/yuanzhongshang/GIFT/blob/main/example/X.txt)
-  * [Simulated phenotype vector](https://github.com/yuanzhongshang/GIFT/blob/main/example/Y.txt)
+The following are the example data inputs required to construct PGS for a target trait with the aid of one relevant trait. 
+1. GWAS summary statistics of the two traits from [GEMMA](https://github.com/genetics-statistics/GEMMA)
+When four sets of summary statistics are available (one for overlapped individuals and one for non-overlapped individuals for the two traits)
+  * [Summary statistics of overlapped individuals for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
+  * [Summary statistics of non-overlapped individuals for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zy.txt)
+  * [Summary statistics of overlapped individuals for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/X.txt)
+  * [Summary statistics of non-overlapped individuals for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/Y.txt)
+ When two sets of summary statistics are available (one for each trait)
+  * [Summary statistics for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
+  * [Summary statistics for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/X.txt)
   
-2. For the summary statistics:
-  * [Zscore matrix for the cis-SNP effect size from the eQTL data](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zscore1.txt)
-  * [Zscore vector for the cis-SNP effect size from the GWAS data](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zscore2.txt)
-  * [LD matrix for the cis-SNPs in the eQTL data](https://github.com/yuanzhongshang/GIFT/blob/main/example/LDmatrix1.txt)
-  * [LD matrix for the cis-SNPs in the GWAS data](https://github.com/yuanzhongshang/GIFT/blob/main/example/LDmatrix2.txt)
-  * [Estimated correlated matrix of gene expressions](https://github.com/yuanzhongshang/GIFT/blob/main/example/R.txt)
+2. Reference panel for computing LD matrix
+  * [Reference panel](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zscore1.txt)
 
+3. LD block information from [Berisa et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731402/)
+  * [European](https://github.com/xuchang0201/mtPGS/blob/main/data/EUR_LD_Block.txt)
+ 
+4. Genetic and environmental variance component matrices
+  * [Genetic variance component](https://github.com/xuchang0201/mtPGS/blob/main/data/v_g.txt)
+  * [Environmental variance component](https://github.com/xuchang0201/mtPGS/blob/main/data/v_e.txt)
