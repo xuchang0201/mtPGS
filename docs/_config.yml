@@ -31,7 +31,7 @@ links:
       url: https://github.com/xuchang0201/mtPGS/issues
 
 ui:
-  mode: 'dark' # 'auto', 'dark', 'light'
+  mode: 'auto' # 'auto', 'dark', 'light'
   brand:
     dark: "#00ceff"
     light: "#36A7B9"
