@@ -4,13 +4,11 @@ title: Data Input
 description: ~
 ---
 The following items are the example data inputs required to construct PGS for a target trait with the aid of one relevant trait. 
-1. GWAS summary statistics of the two traits from [GEMMA](https://github.com/genetics-statistics/GEMMA)
-a. When four sets of summary statistics are available (one for overlapped individuals and one for non-overlapped individuals for each trait):  
+1. GWAS summary statistics of the two traits from [GEMMA](https://github.com/genetics-statistics/GEMMA) 
   * [Summary statistics of overlapped individuals for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
   * [Summary statistics of non-overlapped individuals for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zy.txt)
   * [Summary statistics of overlapped individuals for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/X.txt)
   * [Summary statistics of non-overlapped individuals for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/Y.txt) 
-b. When two sets of summary statistics are available (one for each trait):
   * [Summary statistics for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
   * [Summary statistics for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/X.txt)
   
