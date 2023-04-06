@@ -9,7 +9,7 @@ a. When four sets of summary statistics are available (one for overlapped indivi
   * [Summary statistics of overlapped individuals for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
   * [Summary statistics of non-overlapped individuals for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zy.txt)
   * [Summary statistics of overlapped individuals for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/X.txt)
-  * [Summary statistics of non-overlapped individuals for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/Y.txt)
+  * [Summary statistics of non-overlapped individuals for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/Y.txt) <br>
 b. When two sets of summary statistics are available (one for each trait):
   * [Summary statistics for trait 1](https://github.com/yuanzhongshang/GIFT/blob/main/example/Zx.txt)
   * [Summary statistics for trait 2](https://github.com/yuanzhongshang/GIFT/blob/main/example/X.txt)
