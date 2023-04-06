@@ -10,7 +10,7 @@ For mtPGS installation, please clone this repository via the commands
     cd mtPGS
     
 # How to use mtPGS
-Details in [Tutorial](https://xuchang0201.github.io/mtPGS/)
+Details in [Tutorial](https://xuchang0201.github.io/mtPGS)
 
 # Citations
 
