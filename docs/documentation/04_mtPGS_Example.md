@@ -3,10 +3,10 @@ layout: page
 title: mtPGS Tutorial
 description: ~
 ---
-This page provides a tutorial for PGS construction using mtPGS. Before runing the example code, make sure that the mtPGS software is installed and compiled successfully. For instructions for installation, please see the [Installation section](https://xuchang0201.github.io/mtPGS/documentation/02_installation.html).
+This page provides a tutorial for PGS construction using mtPGS. Before runing the example code, make sure that the mtPGS software is installed and compiled successfully. For instructions on installation, please see the [Installation section](https://xuchang0201.github.io/mtPGS/documentation/02_installation.html).
 
 ## mtPGS
-The example data for mtPGS tutorial can be downloaded in this [page](https://xuchang0201.github.io/mtPGS/documentation/03_data.html). Here are the details about the required data input illustrated. 
+The example data for mtPGS tutorial can be downloaded in this [page](https://xuchang0201.github.io/mtPGS/documentation/03_data.html). Here are the details about the input data formats and mtPGS commands. 
 ### 1. Formats of input data for mtPGS
 * GWAS summary statistics: We require the GWAS summary statistics in [GEMMA](https://github.com/genetics-statistics/GEMMA) format, with the following columns: chr, rs, ps, n_mis, n_obs, allele1, allele0, af, beta, se, p_wald. Please be advised that each column should be separated using tab. 
 * Reference panel: The reference panel for LD matrix should be in PLINK binary format (bed, bim, and fam).
