@@ -25,7 +25,7 @@ make && make install
 #### 2. Install `mtPGS`
 ```
 git clone https://github.com/xuchang0201/mtPGS.git
-cd mtPGS
+cd mtPGS/src
 make
 ```
 #### 3. Check the options included in the `mtPGS`
