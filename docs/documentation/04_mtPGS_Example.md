@@ -17,7 +17,7 @@ The example data for mtPGS tutorial can be downloaded in this [page](https://xuc
 When four sets of GWAS summary statistics are available (one for overlapped individuals and one for non-overlapped individuals for each trait), and we designate trait 1 as the target trait, the PGS construction for the target trait can be performed using the following command
 ```
 workdir=/your/mtPGS/directory #specify the mtPGS directory
-${workdir}/mtPGS --summstat_int ${workdir}/data/summstat/summstat_trait_1_int.assoc.txt ${workdir}/data/summstat/summstat_trait_2_int.assoc.txt \
+${workdir}/src/mtPGS --summstat_int ${workdir}/data/summstat/summstat_trait_1_int.assoc.txt ${workdir}/data/summstat/summstat_trait_2_int.assoc.txt \
 --summstat_ext ${workdir}/data/summstat/summstat_trait_1_ext.assoc.txt ${workdir}/data/summstat/summstat_trait_2_ext.assoc.txt \
 --n_s 7000 --n_ext 3000 3000 --block ${workdir}/data/block.txt --target 0 --ref ${workdir}/data/ref --mafMax 0.8 \
 --vg v_g.txt --ve v_e.txt --output trait_1_target_beta trait_2_relevant_beta
