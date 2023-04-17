@@ -20,7 +20,7 @@ workdir=/your/mtPGS/directory #specify the mtPGS directory
 ${workdir}/src/mtPGS --summstat_int ${workdir}/data/summstat/summstat_trait_1_int.assoc.txt ${workdir}/data/summstat/summstat_trait_2_int.assoc.txt \
 --summstat_ext ${workdir}/data/summstat/summstat_trait_1_ext.assoc.txt ${workdir}/data/summstat/summstat_trait_2_ext.assoc.txt \
 --n_s 7000 --n_ext 3000 3000 --block ${workdir}/data/block.txt --target 0 --ref ${workdir}/data/ref --mafMax 0.8 \
---vg v_g.txt --ve v_e.txt --output trait_1_target_beta trait_2_relevant_beta
+--vg ${workdir}/data/v_g.txt --ve ${workdir}/data/v_e.txt --output trait_1_target_beta trait_2_relevant_beta
 ```
 The essential inputs are:
 - summstat_int: specify the GWAS summary statistics computed based on overlapped individuals.
