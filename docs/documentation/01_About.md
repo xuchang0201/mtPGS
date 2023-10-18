@@ -7,7 +7,7 @@ Multi-trait assisted Polygenic Scores (mtPGS) is a statistical method that lever
 
 Citation
 -------------------
-Chang Xu, Santhi K. Ganesh, and Xiang Zhou (2023). mtPGS: Leverage multiple correlated traits for accurate polygenic score construction.
+Chang Xu, Santhi K. Ganesh, and Xiang Zhou (2023). mtPGS: Leverage multiple correlated traits for accurate polygenic score construction. The American Journal of Human Genetics. 110: 1673–1689.
 
 Contact
 -------------------
