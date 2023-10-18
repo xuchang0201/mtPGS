@@ -30,5 +30,6 @@ make
 ```
 #### 3. Check the options included in the `mtPGS`
 ```
-./mtPGS -h
+./mtPGS_int_ext -h #check input options for mtPGS that takes four sets of summary statistics 
+./mtPGS_int_only -h #check input options for mtPGS that takes two sets of summary statistics
 ```
