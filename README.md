@@ -8,7 +8,7 @@ Details in [Tutorial](https://xuchang0201.github.io/mtPGS/)
 
 # Citations
 
-Chang Xu, Santhi K. Ganesh, and Xiang Zhou (2023). mtPGS: Leverage multiple correlated traits for accurate polygenic score construction. The American Journal of Human Genetics. 110: 1673–1689
+Chang Xu, Santhi K. Ganesh, and Xiang Zhou (2023). mtPGS: Leverage multiple correlated traits for accurate polygenic score construction. The American Journal of Human Genetics. 110: 1673–1689.
 
 # Questions 
 If you have any questions on mtPGS software, please email to Chang Xu (xuchang@umich.edu).
