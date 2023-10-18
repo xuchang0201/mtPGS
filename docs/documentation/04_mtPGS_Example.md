@@ -17,10 +17,13 @@ The example data for mtPGS tutorial can be downloaded in this [page](https://xuc
 When four sets of GWAS summary statistics are available (one for overlapped individuals and one for non-overlapped individuals for each trait), and we designate trait 1 as the target trait, the PGS construction for the target trait can be performed using the following command
 ```
 workdir=/your/mtPGS/directory #specify the mtPGS directory
-${workdir}/src/mtPGS --summstat_int ${workdir}/data/summstat/summstat_trait_1_int.assoc.txt ${workdir}/data/summstat/summstat_trait_2_int.assoc.txt \
+r2=0.2 #pre-specified LD threshold
+pval=1e-6 #pre-specified p value threshold
+plink=/usr/cluster/bin/plink-1.9 #the directory of plink 1.9 software
+${workdir}/src/mtPGS_int_ext --summstat_int ${workdir}/data/summstat/summstat_trait_1_int.assoc.txt ${workdir}/data/summstat/summstat_trait_2_int.assoc.txt \
 --summstat_ext ${workdir}/data/summstat/summstat_trait_1_ext.assoc.txt ${workdir}/data/summstat/summstat_trait_2_ext.assoc.txt \
 --n_s 7000 --n_ext 3000 3000 --block ${workdir}/data/EUR_LD_Block.txt --target 0 --ref ${workdir}/data/ref --mafMax 0.8 \
---vg ${workdir}/data/v_g.txt --ve ${workdir}/data/v_e.txt --output trait_1_target_beta trait_2_relevant_beta
+--vg ${workdir}/data/v_g.txt --ve ${workdir}/data/v_e.txt --r2 ${r2} --pval ${pval} --plink ${plink} --c_t ${workdir}/data/c_t_output --output trait_1_target_beta trait_2_relevant_beta
 ```
 The essential inputs are:
 - summstat_int: specify the GWAS summary statistics computed based on overlapped individuals.
@@ -33,15 +36,22 @@ The essential inputs are:
 - mafMax: specify the maximium of the allele frequency difference between reference panel and summary data.
 - vg: specify the directory of genetic variance components file.
 - ve: specify the directory of environmental variance components file.
+- r2: specify the LD threshold for C+T procedure
+- pval: specify the p value threshold for C+T procedure
+- plink: specify the directory of plink 1.9 software
+- c_t: specify the prefix for the outputs of C+T procedure
 - output: specify the prefix of output files.
 
 ### 3. Running mtPGS with two sets of GWAS summary statistics
 When only two sets of summary statistics are available (one for each trait), we perform mtPGS analysis using the following command
 ```
 workdir=/your/mtPGS/directory #specify the mtPGS directory
-${workdir}/mtPGS --summstat ${workdir}/data/summstat/summstat_trait_1.assoc.txt ${workdir}/data/summstat/summstat_trait_2.txt \
---n 10000 10000 --block ${workdir}/data/block.txt --target 0 --ref ${workdir}/data/ref --mafMax 0.8 --vg v_g.txt --ve v_e.txt \
---output trait_1_target_beta trait_2_relevant_beta
+r2=0.2 #pre-specified LD threshold
+pval=1e-6 #pre-specified p value threshold
+plink=/usr/cluster/bin/plink-1.9 #the directory of plink 1.9 software
+${workdir}/src/mtPGS_int_only --summstat ${workdir}/data/summstat/summstat_trait_1.assoc.txt ${workdir}/data/summstat/summstat_trait_2.assoc.txt \
+--n 10000 10000 --block ${workdir}/data/EUR_LD_Block.txt --target 0 --ref ${workdir}/data/ref --mafMax 0.8 --vg ${workdir}/data/v_g.txt --ve ${workdir}/data/v_e.txt \
+--r2 ${r2} --pval ${pval} --plink ${plink} --c_t ${workdir}/data/c_t_output --output trait_1_target_beta trait_2_relevant_beta
 ```
 Here, instead of summstat_int, summstat_ext and n_s, n_ext, we use
 - summstat: specify the GWAS summary statistics for the two traits
