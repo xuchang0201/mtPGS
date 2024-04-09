@@ -69,7 +69,7 @@ rs12768213 C -0.000779155 -0.0011521 0
 rs11254302 G -0.000137537 -0.000338145 0
 rs2942359 C 0.000739596 0.00116475 0
 ```
-The output file has five columns (without header): the first column is the SNP ID, the second column is the effect allele, the third column is the scaled effect sizes, the fourth column is the non-scaled effect sizes (computed using MAF from summary statistics), and the last column is the index of whether this SNP has large or small effect (1 for large-effect SNP and 0 for small-effect SNP). This output file can be directly used to compute PGS using the score function of PLINK. To do this, please use columns 1, 2, and 4 of the mtPGS output and the example code as follows:
+The output file has five columns (without header): the first column is the SNP ID, the second column is the effect allele, the third column is the scaled effect sizes, the fourth column is the non-scaled effect sizes (computed using MAF from summary statistics), and the last column is the index of whether this SNP has large or small effect (1 for large-effect SNP and 0 for small-effect SNP). This output file can be directly used to compute PGS using the `score` function of PLINK. To do this, please use columns 1, 2, and 4 of the mtPGS output and the example code as follows:
 ```
 plink-1.9 --bfile test_genotype_data --score beta.txt 1 2 4 sum --out test_PGS
 ```
