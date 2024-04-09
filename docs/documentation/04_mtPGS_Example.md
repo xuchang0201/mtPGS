@@ -56,3 +56,21 @@ ${workdir}/src/mtPGS_int_only --summstat ${workdir}/data/summstat/summstat_trait
 Here, instead of summstat_int, summstat_ext and n_s, n_ext, we use
 - summstat: specify the GWAS summary statistics for the two traits
 - n: specify sample sizes for the two traits
+
+### 4. output of mtPGS and PGS computation
+The example of output file is
+```
+rs12024068 A 0.0600938 0.118039 1
+rs4580536 A -0.0731202 -0.133717 1
+rs6856795 A -0.0558476 -0.0954865 1
+rs493284 T -0.0583431 -0.0827885 1
+rs12354787 T -0.000148759 -0.000365733 0
+rs12768213 C -0.000779155 -0.0011521 0
+rs11254302 G -0.000137537 -0.000338145 0
+rs2942359 C 0.000739596 0.00116475 0
+```
+The output file has five columns (without header): the first column is SNP ID, the second column is effect allele, the third column is scaled effect size, the fourth column is non-scaled effect size (computed using MAF from summary statistics), and the last column is index of whether this SNP has large or small effect (1 for large-effect SNP and 0 for small-effect SNP). This output file can be directly used to compute PGS using the score function of PLINK. To do this, please use columns 1, 2, and 4 and the example code as follows:
+```
+plink-1.9 --bfile test_genotype_data --score beta.txt 1 2 4 sum --out test_PGS
+```
+Here, test_genotype_data is the prefix of genotype data that you would like to compute PGS using the estimated effect sizes, beta.txt is the output of mtPGS, and test_PGS is the prefix of the output PGS. 
